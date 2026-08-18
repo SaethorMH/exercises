@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Tal</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Få et tilfældigt tal</h1>
+      <h1 id="tal"></h1>
+      <holder class="inputs">
+        <input id="max" type="number" placeholder="Indtast Max Tal" />
+        <button id="rBtn">Tal</button>
+      </holder>
+    </div>
+    <div>
+      <h1 id="h">Gæt et tal!</h1>
+      <p id="p">Kan du gætte et tal imellem 0 og 100?</p>
+      <holder class="inputs">
+        <input
+          type="number"
+          name="guess"
+          id="guess"
+          placeholder="Gæt her!"
+          max="100"
+        />
+        <button id="guessBtn">Gæt</button>
+        <h1 id="right"></h1>
+      </holder>
+
+      <p id="hint"></p>
+    </div>
+
+    <script src="jsinclass.js"></script>
+  </body>
+</html>

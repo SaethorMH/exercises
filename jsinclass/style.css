@@ -1,0 +1,83 @@
+:root {
+  --green: yellowgreen;
+  --black: black;
+  --white: white;
+  transition: 1.2s ease;
+}
+.win {
+  --green: black;
+  --black: yellowgreen;
+  --white: black;
+  transition: 1.2s ease;
+}
+html {
+  transition: 1.2s ease;
+}
+* {
+  /* font-family: "Pixelify Sans", sans-serif; */
+  font-family: "Courier New", Courier, monospace;
+  transition: 1.2s ease;
+}
+
+body {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--black);
+}
+div {
+  place-self: center;
+  width: 50%;
+  background-color: var(--black);
+  border-radius: 10px;
+  border: solid 1px var(--white);
+  box-shadow: 0px 0px 10px var(--green);
+}
+h1,
+p {
+  place-self: center;
+  color: var(--white);
+}
+h1 {
+  text-shadow: 0px 0px 10px var(--green);
+}
+p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+input {
+  margin: auto;
+  place-self: center;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--black);
+  color: var(--white);
+  border-color: brown;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+button {
+  background-color: var(--green);
+  border: none;
+  color: var(--black);
+  width: 20%;
+  height: 60px;
+  place-self: center;
+  transition: 0.1s ease;
+  box-shadow: 0 0 10px var(--green);
+  font-size: 3rem;
+  font-weight: 900;
+  border-radius: 5px;
+  margin: 5px;
+}
+button:hover {
+  background-color: aquamarine;
+}
+.hidden {
+  display: none;
+}
