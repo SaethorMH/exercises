@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robot Gætter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Find på et tal så gætter robotten det</h1>
+    <input
+      id="secretNumber"
+      type="number"
+      min="1"
+      max="100"
+      placeholder="Dit hemmelige tal"
+    />
+    <button id="startBtn">Start</button>
+    <h2 id="rGuess">Vælg et tal inden du trykker start!</h2>
+    <div id="btnHolder">
+      <button class="hint" id="lowBtn" disabled>For lavt</button>
+      <button class="hint" id="rightBtn" disabled>Lige på!!</button>
+      <button class="hint" id="highBtn" disabled>For højt</button>
+    </div>
+    <button id="reset" class="hidden">Genstart</button>
+    <script src="index.js"></script>
+  </body>
+</html>
