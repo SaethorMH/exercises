@@ -18,9 +18,9 @@ function rockChoice() {
   player2.classList.add("shake");
 
   opPreChoice = Math.ceil(Math.random() * 3);
-  if (opPreChoice == 1) {
+  if (opPreChoice === 1) {
     opChoice = "rock";
-  } else if (opPreChoice == 2) {
+  } else if (opPreChoice === 2) {
     opChoice = "paper";
   } else {
     opChoice = "scissors";
@@ -53,6 +53,7 @@ function rockChoice() {
   //     }
   //   });
 }
+
 paperBtn.addEventListener("click", paperChoice);
 function paperChoice() {
   document.querySelector("#win").classList.add("hidden");
@@ -65,9 +66,9 @@ function paperChoice() {
   player2.classList.add("shake");
 
   opPreChoice = Math.ceil(Math.random() * 3);
-  if (opPreChoice == 1) {
+  if (opPreChoice === 1) {
     opChoice = "rock";
-  } else if (opPreChoice == 2) {
+  } else if (opPreChoice === 2) {
     opChoice = "paper";
   } else {
     opChoice = "scissors";
@@ -109,9 +110,9 @@ function scissorsChoice() {
   player2.classList.add("shake");
 
   opPreChoice = Math.ceil(Math.random() * 3);
-  if (opPreChoice == 1) {
+  if (opPreChoice === 1) {
     opChoice = "rock";
-  } else if (opPreChoice == 2) {
+  } else if (opPreChoice === 2) {
     opChoice = "paper";
   } else {
     opChoice = "scissors";
@@ -151,9 +152,9 @@ function shoot() {
     player2.classList.add(opChoice);
     draw();
   } else if (
-    (pChoice == "paper" && opChoice == "rock") ||
-    (pChoice == "scissors" && opChoice == "paper") ||
-    (pChoice == "rock" && opChoice == "scissors")
+    (pChoice === "paper" && opChoice === "rock") ||
+    (pChoice === "scissors" && opChoice === "paper") ||
+    (pChoice === "rock" && opChoice === "scissors")
   ) {
     clear();
     player1.classList.add(pChoice);
@@ -167,14 +168,8 @@ function shoot() {
   }
 }
 function clear() {
-  player1.classList.remove("shake");
-  player2.classList.remove("shake");
-  player1.classList.remove("paper");
-  player2.classList.remove("paper");
-  player1.classList.remove("scissors");
-  player2.classList.remove("scissors");
-  player1.classList.remove("rock");
-  player2.classList.remove("rock");
+  player1.classList.remove("shake", "paper", "scissors", "rock");
+  player2.classList.remove("shake", "paper", "scissors", "rock");
 }
 function win() {
   console.log("Player Won");
