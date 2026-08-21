@@ -23,9 +23,9 @@ function start() {
   if (!sNumber.value) {
     console.log("there is no number to guess");
     sNumber.innerHTML = "Der Skal Skrives Tal";
-  } else if (Number(sNumber.value) <= 0) {
+  } else if (Number(sNumber.value) <= 0 || Number(sNumber.value) > 100) {
     sNumber.value = 1;
-    rGuess.innerHTML = "Minimum tal er 1";
+    rGuess.innerHTML = "Minimum tal er 1, Max er 100";
   } else {
     console.log("There is a number");
     sNumber.disabled = true;
