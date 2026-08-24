@@ -1,7 +1,10 @@
-"use strict";
-const tallet = document.querySelector("#tal");
-const rBtn = document.querySelector("#rBtn");
-const max = document.querySelector("#max");
+import { robotChoosesNumberWithMax } from "../utils_lib/utils_lib.js";
+import { find } from "../utils_lib/utils_lib.js";
+
+const tallet = find("#tal");
+console.log("!!!!!!!!!!!!!", tallet, "!!!!!!!!!!!!");
+const rBtn = find("#rBtn");
+const max = find("#max");
 
 let maxNumber = 0;
 
@@ -25,11 +28,10 @@ function talmellem1og10() {
 
 /**************************************************************************/
 
-const guessBtn = document.querySelector("#guessBtn");
-const guess = document.querySelector("#guess");
-const hint = document.querySelector("#hint");
-const valgteTal = Math.ceil(Math.random() * 100);
-
+const guessBtn = find("#guessBtn");
+const guess = find("#guess");
+const hint = find("#hint");
+const valgteTal = robotChoosesNumberWithMax(100);
 guessBtn.addEventListener("click", guessing);
 
 function guessing() {
@@ -42,13 +44,15 @@ function guessing() {
     fejring();
   }
 }
+robotChoosesNumberWithMax;
+console.log("robottens hemmelige valgte tal er = ", valgteTal);
 function fejring() {
   console.log("DU KLAREDE DET");
-  document.querySelector("html").classList.add("win");
+  find("html").classList.add("win");
   hint.innerHTML = "Tallet er " + guess.value + "!!!";
-  document.querySelector("#h").innerHTML = "Korrekt!!!";
-  document.querySelector("#p").innerHTML = "Korrekt!!!";
+  find("#h").innerHTML = "Korrekt!!!";
+  find("#p").innerHTML = "Korrekt!!!";
   guessBtn.classList.add("hidden");
   guess.classList.add("hidden");
-  document.querySelector("#right").innerHTML = valgteTal + " er korrekt!!";
+  find("#right").innerHTML = valgteTal + " er korrekt!!";
 }
