@@ -2,6 +2,6 @@ export function rNumber(rMax) {
   return Math.ceil(Math.random() * rMax);
 }
 
-export function find(elementName) {
+export function $(elementName) {
   return document.querySelector(elementName);
 }

@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+}
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+div {
+  place-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 10rem;
+  width: 40rem;
+  border-radius: 20px;
+  border: white solid 2px;
+  box-shadow: aqua 0px 0px 50px;
+}
+ul {
+  place-self: center;
+  padding: 1rem;
+  border: solid 1px white;
+  background-color: rgb(26, 24, 24);
+}
+a {
+  color: lightblue;
+}
+li {
+  color: white;
+  list-style: none;
+  display: inline;
+}
+a,
+li {
+  font-size: 1.2rem;
+  text-shadow:;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  place-self: center;
+  top: 2rem;
+  background-color: black;
+  border: white 1px solid;
+  box-shadow: red 0px 0px 10px;
+  transition: 0.2s all ease;
+  color: white;
+  font-size: 2rem;
+}
+button:hover {
+  box-shadow: greenyellow 0px 0px 40px;
+}
