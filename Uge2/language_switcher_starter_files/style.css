@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  background-color: bisque;
+  place-self: center;
+  place-items: center;
+}
+header {
+  border: solid rgb(25, 27, 25) 5px;
+  padding: 20px;
+  width: 70vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: beige;
+  font-size: 4rem;
+}
+.footer {
+  border: solid rgb(25, 27, 25) 5px;
+  padding: 20px;
+  width: 70vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: beige;
+  font-size: 2rem;
+  place-self: end center;
+}
+select {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 2rem;
+  width: 15rem;
+}
+option {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+h2 {
+  font-family: cursive;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+}

@@ -52,22 +52,8 @@ document.querySelectorAll("button").forEach((btn) => {
 
 function showTheseVehicles(arr) {
   tbodyPointer.innerHTML = "";
+
   arr.forEach((each) => {
-    // if (!each.fuel) {
-    //   each.fuel = "Not fueled";
-    // }
-    // if (!each.stops) {
-    //   each.stops = "Doesn't Have a fixed route";
-    // }
-    // if (!each.ownedBy) {
-    //   each.ownedBy = "No one";
-    // }
-    // if (!each.isElectric) {
-    //   each.isElectric = "false";
-    // }
-    // if (!each.isTandem) {
-    //   each.isTandem = "false";
-    // }
     tbodyPointer.innerHTML += `<tr>
   <td>${each.type}</td>
   <td>${each.fuel ? each.fuel : "Has no Fuel type"}</td>
